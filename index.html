@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/init.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/Coord.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slotmachine.js"></script>
+    <script>
+        var $j = jQuery.noConflict();
+    </script>
+    <script type="text/javascript" src="js/Audio.js"></script>
+    <script type="text/javascript" src="js/Option.js"></script>
+    <script type="text/javascript" src="js/Rule.js"></script>
+    <script type="text/javascript" src="js/Computer.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>飞行棋</title>
+</head>
+<body>
+<div class="main">
+    <div class="dice" id="dice">
+        <div class="slot slot1"></div>
+        <div class="slot slot2"></div>
+        <div class="slot slot3"></div>
+        <div class="slot slot4"></div>
+        <div class="slot slot5"></div>
+        <div class="slot slot6"></div>
+    </div>
+    <div id="sdnred" class="showdicenum sdnred"></div>
+    <div id="sdnblue" class="showdicenum sdnblue"></div>
+    <div id="sdnyellow" class="showdicenum sdnyellow"></div>
+    <div id="sdngreen" class="showdicenum sdngreen"></div>
+    <div class="option">
+        <div class="option-child-one">
+            <div class="line mb">
+                <div class="line-circle" style="background-color: red"></div>
+                <ul class="fl" id="redUser">
+                    <li class="bt fl bth">玩家</li>
+                    <li class="bt fl">电脑</li>
+                    <li class="bt fl">无</li>
+                </ul>
+            </div>
+            <div class="line mb">
+                <div class="line-circle" style="background-color: blue"></div>
+                <ul class="fl" id="blueUser">
+                    <li class="bt fl">玩家</li>
+                    <li class="bt fl bth">电脑</li>
+                    <li class="bt fl">无</li>
+                </ul>
+            </div>
+            <div class="line mb">
+                <div class="line-circle" style="background-color: yellow"></div>
+                <ul class="fl" id="yellowUser">
+                    <li class="bt fl">玩家</li>
+                    <li class="bt fl bth">电脑</li>
+                    <li class="bt fl">无</li>
+                </ul>
+            </div>
+            <div class="line mb">
+                <div class="line-circle" style="background-color: green"></div>
+                <ul class="fl" id="greenUser">
+                    <li class="bt fl">玩家</li>
+                    <li class="bt fl bth">电脑</li>
+                    <li class="bt fl">无</li>
+                </ul>
+            </div>
+            <div class="line mt mb">
+                <div class="option-cl">起飞点数</div>
+                <ul class="fl" id="qifei">
+                    <li class="sbt fl">2,4,6</li>
+                    <li class="sbt fl">5,6</li>
+                    <li class="sbt fl bth">6</li>
+                </ul>
+            </div>
+            <div class="line mt">
+                <div class="option-cl">难度</div>
+                <ul class="fl" id="nandu">
+                    <li class="sbt fl">简单</li>
+                    <li class="sbt fl bth">普通</li>
+                    <li class="sbt fl">难</li>
+                </ul>
+            </div>
+        </div>
+        <div id="begin" class="option-begin">开始</div>
+    </div>
+</div>
+<div class="shade">&nbsp;</div>
+<audio id="yinxiao" src=""></audio>
+</body>
+</html>
